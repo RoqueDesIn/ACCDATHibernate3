@@ -26,13 +26,13 @@ public class MainHb3 {
 		// abrir sesion Hibernate
 		Session sesion = HbSession.openSession();
 		// ejemplo uno a muchos
-		//EjUnoAMuchos(sesion);
+		EjUnoAMuchos(sesion);
 		
 		//ejemplo muchos a muchos
-		//EjMuchosAMuchos(sesion);
+		EjMuchosAMuchos(sesion);
 		
 		// ejemplo tipos
-		//EjTiposBasicos(sesion);
+		EjTiposBasicos(sesion);
 		
 		// ejemplo enum
 		EjEnum(sesion);
@@ -41,6 +41,7 @@ public class MainHb3 {
 	
 		System.out.println("fin");
 	}
+	
 	/**
 	 * ejemplo enum
 	 * @param sesion
@@ -49,6 +50,7 @@ public class MainHb3 {
 		Alumno alumno= new Alumno(412, "Elias", "Rubio", "Sánchez",TipoAlumno.Interino);
 		sesion.save(alumno);
 	}
+	
 	/**
 	 * ejemplo tipos basicos
 	 * @param sesion
