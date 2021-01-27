@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 20-ene-2021 12:12:07 by Hibernate Tools 5.4.12.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="bd_neptuno" dynamic-insert="false" dynamic-update="false" mutable="true" name="modelos.Producto" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="producto">
+        <id name="id" type="int">
+            <column name="id"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="cantidadPorUnidad" optimistic-lock="true" type="string" unique="false">
+            <column name="cantidad_por_unidad"/>
+        </property>
+        <property generated="never" lazy="false" name="categoriaId" optimistic-lock="true" type="int" unique="false">
+            <column name="categoria_id" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="iva" optimistic-lock="true" type="double" unique="false">
+            <column name="iva" not-null="true" precision="22" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="nivelNuevoPedido" optimistic-lock="true" type="int" unique="false">
+            <column name="nivel_nuevo_pedido" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="notas" optimistic-lock="true" type="string" unique="false">
+            <column name="notas"/>
+        </property>
+        <property generated="never" lazy="false" name="precioUnidad" optimistic-lock="true" type="double" unique="false">
+            <column name="precio_unidad" not-null="true" precision="22" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="producto" optimistic-lock="true" type="string" unique="false">
+            <column name="producto"/>
+        </property>
+        <property generated="never" lazy="false" name="proveedorId" optimistic-lock="true" type="int" unique="false">
+            <column name="proveedor_id" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="suspendido" optimistic-lock="true" type="byte" unique="false">
+            <column name="suspendido" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="unidadesExistencias" optimistic-lock="true" type="int" unique="false">
+            <column name="unidades_existencias" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="unidadesPedido" optimistic-lock="true" type="int" unique="false">
+            <column name="unidades_pedido" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

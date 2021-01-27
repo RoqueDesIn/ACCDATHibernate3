@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.password">1234</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/bd_neptuno?serverTimezone=UTC</property>
+        <property name="hibernate.connection.username">usuario_hibernate</property>
+        <property name="hibernate.default_schema">bd_neptuno</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.format_sql">false</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.search.autoregister_listeners">true</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.validator.apply_to_ddl">false</property>
+        <mapping resource="modelos/Clavesanteriores.hbm.xml"/>
+        <mapping resource="modelos/CategoriasNew.hbm.xml"/>
+        <mapping resource="modelos/VEmpleados1.hbm.xml"/>
+        <mapping resource="modelos/Tiposbasicos.hbm.xml"/>
+        <mapping resource="modelos/Superusuarios.hbm.xml"/>
+        <mapping resource="modelos/Importes.hbm.xml"/>
+        <mapping resource="modelos/Productos.hbm.xml"/>
+        <mapping resource="modelos/ProveedoresNew.hbm.xml"/>
+        <mapping resource="modelos/Profesor.hbm.xml"/>
+        <mapping resource="modelos/Totales.hbm.xml"/>
+        <mapping resource="modelos/TotalesMensuales.hbm.xml"/>
+        <mapping resource="modelos/HibernateSequences.hbm.xml"/>
+        <mapping resource="modelos/Empleados.hbm.xml"/>
+        <mapping resource="modelos/Detalles.hbm.xml"/>
+        <mapping resource="modelos/HibernateSequence.hbm.xml"/>
+        <mapping resource="modelos/ProductosNew.hbm.xml"/>
+        <mapping resource="modelos/Modulo.hbm.xml"/>
+        <mapping resource="modelos/Pedidos.hbm.xml"/>
+        <mapping resource="modelos/Clientes.hbm.xml"/>
+        <mapping resource="modelos/Categorias.hbm.xml"/>
+        <mapping resource="modelos/Envios.hbm.xml"/>
+        <mapping resource="modelos/Correoelectronico.hbm.xml"/>
+        <mapping resource="modelos/Proveedores.hbm.xml"/>
+        <mapping resource="modelos/VNueva.hbm.xml"/>
+        <mapping resource="modelos/Usuarios.hbm.xml"/>
+        <mapping resource="modelos/Producto.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

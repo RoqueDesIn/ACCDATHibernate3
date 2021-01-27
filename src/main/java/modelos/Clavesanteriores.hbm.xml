@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 20-ene-2021 12:12:07 by Hibernate Tools 5.4.12.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="bd_neptuno" dynamic-insert="false" dynamic-update="false" mutable="true" name="modelos.Clavesanteriores" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="clavesanteriores">
+        <id name="numero" type="java.lang.Integer">
+            <column name="numero"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="nombre" optimistic-lock="true" type="string" unique="false">
+            <column length="30" name="nombre"/>
+        </property>
+        <property generated="never" lazy="false" name="clave" optimistic-lock="true" type="string" unique="false">
+            <column length="30" name="clave"/>
+        </property>
+    </class>
+</hibernate-mapping>

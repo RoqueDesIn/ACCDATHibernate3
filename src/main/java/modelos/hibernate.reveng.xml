@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="bd_neptuno" match-name="categorias"/>
+  <table-filter match-catalog="bd_neptuno" match-name="categorias_new"/>
+  <table-filter match-catalog="bd_neptuno" match-name="clavesanteriores"/>
+  <table-filter match-catalog="bd_neptuno" match-name="clientes"/>
+  <table-filter match-catalog="bd_neptuno" match-name="correoelectronico"/>
+  <table-filter match-catalog="bd_neptuno" match-name="detalles"/>
+  <table-filter match-catalog="bd_neptuno" match-name="empleados"/>
+  <table-filter match-catalog="bd_neptuno" match-name="envios"/>
+  <table-filter match-catalog="bd_neptuno" match-name="hibernate_sequence"/>
+  <table-filter match-catalog="bd_neptuno" match-name="hibernate_sequences"/>
+  <table-filter match-catalog="bd_neptuno" match-name="importes"/>
+  <table-filter match-catalog="bd_neptuno" match-name="modulo"/>
+  <table-filter match-catalog="bd_neptuno" match-name="pedidos"/>
+  <table-filter match-catalog="bd_neptuno" match-name="producto"/>
+  <table-filter match-catalog="bd_neptuno" match-name="productos"/>
+  <table-filter match-catalog="bd_neptuno" match-name="productos_new"/>
+  <table-filter match-catalog="bd_neptuno" match-name="profesor"/>
+  <table-filter match-catalog="bd_neptuno" match-name="profesormodulo"/>
+  <table-filter match-catalog="bd_neptuno" match-name="proveedores"/>
+  <table-filter match-catalog="bd_neptuno" match-name="proveedores_new"/>
+  <table-filter match-catalog="bd_neptuno" match-name="superusuarios"/>
+  <table-filter match-catalog="bd_neptuno" match-name="tiposbasicos"/>
+  <table-filter match-catalog="bd_neptuno" match-name="totales"/>
+  <table-filter match-catalog="bd_neptuno" match-name="totales_mensuales"/>
+  <table-filter match-catalog="bd_neptuno" match-name="usuarios"/>
+  <table-filter match-catalog="bd_neptuno" match-name="v_empleados1"/>
+  <table-filter match-catalog="bd_neptuno" match-name="v_nueva"/>
+</hibernate-reverse-engineering>

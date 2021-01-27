@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 20-ene-2021 12:12:07 by Hibernate Tools 5.4.12.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="bd_neptuno" dynamic-insert="false" dynamic-update="false" mutable="true" name="modelos.Tiposbasicos" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="tiposbasicos">
+        <id name="inte" type="int">
+            <column name="inte"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="bigDecimal" optimistic-lock="true" type="big_decimal" unique="false">
+            <column name="bigDecimal"/>
+        </property>
+        <property generated="never" lazy="false" name="bigInteger" optimistic-lock="true" type="big_decimal" unique="false">
+            <column name="bigInteger"/>
+        </property>
+        <property generated="never" lazy="false" name="binario" optimistic-lock="true" type="binary" unique="false">
+            <column name="binario"/>
+        </property>
+        <property generated="never" lazy="false" name="boolean1" optimistic-lock="true" type="boolean" unique="false">
+            <column name="boolean1" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="byte1" optimistic-lock="true" type="byte" unique="false">
+            <column name="byte1" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="character1" optimistic-lock="true" type="char" unique="false">
+            <column length="1" name="character1" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="dateDate" optimistic-lock="true" type="date" unique="false">
+            <column length="10" name="dateDate"/>
+        </property>
+        <property generated="never" lazy="false" name="dateTime" optimistic-lock="true" type="time" unique="false">
+            <column length="16" name="dateTime"/>
+        </property>
+        <property generated="never" lazy="false" name="dateTimestamp" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="26" name="dateTimestamp"/>
+        </property>
+        <property generated="never" lazy="false" name="double1" optimistic-lock="true" type="double" unique="false">
+            <column name="double1" not-null="true" precision="22" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="float1" optimistic-lock="true" type="float" unique="false">
+            <column name="float1" not-null="true" precision="12" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="long1" optimistic-lock="true" type="long" unique="false">
+            <column name="long1" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="short1" optimistic-lock="true" type="short" unique="false">
+            <column name="short1" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="stri" optimistic-lock="true" type="string" unique="false">
+            <column name="stri"/>
+        </property>
+        <property generated="never" lazy="false" name="texto" optimistic-lock="true" type="string" unique="false">
+            <column name="texto"/>
+        </property>
+        <property generated="never" lazy="false" name="truefalse1" optimistic-lock="true" type="char" unique="false">
+            <column length="1" name="truefalse1" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="yesno1" optimistic-lock="true" type="char" unique="false">
+            <column length="1" name="yesno1" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 20-ene-2021 12:12:07 by Hibernate Tools 5.4.12.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="bd_neptuno" dynamic-insert="false" dynamic-update="false" mutable="true" name="modelos.HibernateSequence" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="hibernate_sequence">
+        <id name="nextVal" type="java.lang.Long">
+            <column name="next_val"/>
+            <generator class="assigned"/>
+        </id>
+    </class>
+</hibernate-mapping>

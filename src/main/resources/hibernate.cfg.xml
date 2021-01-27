@@ -10,14 +10,16 @@
   <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
   <property name="hibernate.show_sql">true</property>
   <property name="hibernate.format_sql">false</property>
-  <property name="hibernate.hbm2ddl.auto">create</property>
+  <!--  <property name="hibernate.hbm2ddl.auto">create</property> -->
   <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/bd_neptuno?serverTimezone=UTC</property>
-  
- 	<mapping class="modelos.CorreoElectronico"/> 
- 	<mapping class="modelos.Profesor"/>
- 	<mapping class="modelos.Modulo"/> 
- 	<mapping class="modelos.TiposBasicos"/> 
- 	<mapping class="modelos.Alumno"/> 
- 	
+
+  	<mapping resource="modelos/Productos.hbm.xml"/>
+	<mapping resource="modelos/Proveedores.hbm.xml"/>	
+  	<mapping resource="modelos/Categorias.hbm.xml"/>
+  	<mapping resource="modelos/Pedidos.hbm.xml"/>
+  	<mapping resource="modelos/Detalles.hbm.xml"/>
+  	<mapping resource="modelos/Clientes.hbm.xml"/>
+  	<mapping resource="modelos/Empleados.hbm.xml"/> 
+  	<mapping resource="modelos/Envios.hbm.xml"/> 	
  </session-factory>
 </hibernate-configuration>

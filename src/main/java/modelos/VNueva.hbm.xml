@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 20-ene-2021 12:12:07 by Hibernate Tools 5.4.12.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="bd_neptuno" dynamic-insert="false" dynamic-update="false" mutable="true" name="modelos.VNueva" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="v_nueva">
+        <comment>VIEW</comment>
+        <composite-id class="modelos.VNuevaId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="id" type="int">
+                <column name="id"/>
+            </key-property>
+            <key-property name="producto" type="string">
+                <column length="40" name="producto"/>
+            </key-property>
+            <key-property name="proveedorId" type="java.lang.Integer">
+                <column name="proveedor_id"/>
+            </key-property>
+            <key-property name="categoriaId" type="java.lang.Integer">
+                <column name="categoria_id"/>
+            </key-property>
+            <key-property name="cantidadPorUnidad" type="string">
+                <column length="20" name="cantidad_por_unidad"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

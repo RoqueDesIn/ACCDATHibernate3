@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 20-ene-2021 12:12:07 by Hibernate Tools 5.4.12.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="bd_neptuno" dynamic-insert="false" dynamic-update="false" mutable="true" name="modelos.Profesor" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="profesor">
+        <id name="id" type="int">
+            <column name="id"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="ape1" optimistic-lock="true" type="string" unique="false">
+            <column name="ape1"/>
+        </property>
+        <property generated="never" lazy="false" name="ape2" optimistic-lock="true" type="string" unique="false">
+            <column name="ape2"/>
+        </property>
+        <property generated="never" lazy="false" name="nombre" optimistic-lock="true" type="string" unique="false">
+            <column name="nombre"/>
+        </property>
+        <set embed-xml="true" fetch="select" inverse="true" lazy="true" mutable="true" name="correoelectronicos" optimistic-lock="true" sort="unsorted" table="correoelectronico">
+            <key on-delete="noaction">
+                <column name="IdProfesor"/>
+            </key>
+            <one-to-many class="modelos.Correoelectronico" embed-xml="true" not-found="exception"/>
+        </set>
+        <set embed-xml="true" fetch="select" inverse="false" lazy="true" mutable="true" name="modulos" optimistic-lock="true" sort="unsorted" table="profesormodulo">
+            <key on-delete="noaction">
+                <column name="id" not-null="true"/>
+            </key>
+            <many-to-many embed-xml="true" entity-name="modelos.Modulo" not-found="exception" unique="false">
+                <column name="IdModulo" not-null="true"/>
+            </many-to-many>
+        </set>
+    </class>
+</hibernate-mapping>
